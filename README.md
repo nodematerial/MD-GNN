@@ -25,7 +25,7 @@ MD-GNN (GCN-based Predictor for mesoscale metallic systems) is constructed to pr
     - [Step2 Making Graph Representations](#step2-make-graph-representations)
     - [Step3 Prepare other data](#step3-prepare-other-data)
     - [Step4 Train Machine Learning Model](#step4-train-machine-learning-model)
-    - [](#)
+    - [Configure Settings(config.yml)](#configure-settings)
     - [Step5 Predict potential energy (inference)](#step5-predict-potential-energy-inference)
 - [Citation](#citation)
 - [Contact](#contact)
@@ -158,7 +158,7 @@ poetry run python3 train.py
 
 Detailed setting is described in `config.yml` which is placed in each experiment folder.
 
-#### Configure file
+#### Configure Settings
 
 ```yml
 cutoff : [String] # The cutoff which is used as the threshold to convert atoms position into graphs
