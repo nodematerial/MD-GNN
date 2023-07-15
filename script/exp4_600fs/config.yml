@@ -1,0 +1,18 @@
+# training
+cutoff : 2.7
+interval: 600
+data_per_condition: 150
+train_dirs: [Ni_600fs/1000K, Ni_600fs/1500K, Ni_600fs/1700K, Ni_600fs/1900K]
+valid_dirs: [Ni_600fs/1300K, Ni_600fs/1600K]
+all_dirs: [Ni_600fs/1000K,  Ni_600fs/1300K, Ni_600fs/1500K, Ni_600fs/1600K, Ni_600fs/1700K, Ni_600fs/1900K]
+
+seed: 42
+hidden_channels: 20
+epochs: 180
+lr: 1.0e-3
+
+wandb: true
+exp_name: exp4_600fs
+project_name: MDGNN
+
+BASE_ENERGY: -86038.465

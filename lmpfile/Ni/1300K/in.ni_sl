@@ -1,0 +1,30 @@
+
+#pure ni
+units		metal
+boundary	p p p
+atom_style	atomic
+
+variable Temp equal 1300
+
+read_data       ../Solid/data.alloys
+read_data       ../Liquid/data.alloyl add append shift 88 0.0 0.0
+velocity        all create ${Temp} 87287
+
+pair_style	eam/alloy
+pair_coeff	* * ../Mishin-Ni-Al-2009.eam.alloy Ni Al
+
+minimize        1e-5 1e-5 100 100
+reset_timestep	0
+
+thermo		300
+thermo_style	custom step time temp pe ke etotal press
+timestep	0.001
+
+shell       mkdir ../../../dumpfiles/Ni/1300K
+dump		1 all custom 300 ../../../dumpfiles/Ni/1300K/*.alloysl id type x y z xs ys zs vy vy vz
+
+fix             npt1 all  npt temp ${Temp} ${Temp} 0.1 aniso 0.0 0.0 1.0
+fix             vs all  temp/berendsen  ${Temp} ${Temp} 0.1
+run             90000
+unfix		    npt1
+unfix           vs

@@ -1,0 +1,18 @@
+# training
+cutoff : 2.7
+interval: 300
+data_per_condition: 300
+train_dirs: [Ni/1000K, Ni/1500K, Ni/1700K, Ni/1900K]
+valid_dirs: [Ni/1100K, Ni/1200K, Ni/1300K, Ni/1400K, Ni/1600K, Ni/1800K]
+all_dirs: [Ni/1000K, Ni/1100K, Ni/1200K, Ni/1300K, Ni/1400K, Ni/1500K, Ni/1600K, Ni/1700K, Ni/1800K, Ni/1900K]
+
+seed: 42
+hidden_channels: 20
+epochs: 180
+lr: 1.0e-3
+
+wandb: true
+exp_name: Experiment3
+project_name: MDGNN
+
+BASE_ENERGY: -86038.465

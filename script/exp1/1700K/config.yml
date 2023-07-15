@@ -1,0 +1,15 @@
+# training
+cutoff : 2.7
+interval: 300
+dirs : [Ni/1700K]
+
+seed: 42
+hidden_channels: 20
+epochs: 150
+lr: 0.001
+
+wandb: true
+exp_name: exp1-1700K
+project_name: MDGNN
+
+BASE_ENERGY: -82294.84

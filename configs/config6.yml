@@ -1,0 +1,8 @@
+# params for makegraph.py & vectorize.py
+lmpfile_name: in.ni_sl
+dirname: Ni/1500K
+cutoff : 2.7
+
+# single time OR [start, end, interval]
+time : [0, 90000, 300]
+division: [10, 10, 10]

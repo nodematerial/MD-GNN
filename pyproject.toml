@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mdgnn-v2"
+version = "0.1.0"
+description = ""
+authors = ["kota <kouta.tus1@gmail.com>"]
+readme = "README.md"
+# packages = [{include = "mdgnn_v2"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0, <3.11.0"
+torch = { url = "https://download.pytorch.org/whl/cu117/torch-2.0.1%2Bcu117-cp310-cp310-linux_x86_64.whl" }
+torch_geometric = "*"
+matplotlib = "*"
+numpy = "*"
+opencv-python = "*"
+pandas = "*"
+pytest = "*"
+scipy = "*"
+wandb = "*"
+ovito = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
