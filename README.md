@@ -194,15 +194,18 @@ poetry run python3 mapping.py
 ## Citation
 
 ```
-@inproceedings{
-  author       = {Kota Noda and Yasushi Shibuta}
-  title        = {Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks},
-  booktitle    = {},
-  pages        = {},
-  publisher    = {},
-  year         = {},
-  url          = {},
-  doi          = {},
+@article{NODA2023112448,
+  title = {Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks},
+  journal = {Computational Materials Science},
+  volume = {229},
+  pages = {112448},
+  year = {2023},
+  issn = {0927-0256},
+  doi = {https://doi.org/10.1016/j.commatsci.2023.112448},
+  url = {https://www.sciencedirect.com/science/article/pii/S0927025623004421},
+  author = {Kota Noda and Yasushi Shibuta},
+  keywords = {Molecular dynamics, Machine learning, Graph convolutional networks, Graph representation, Solid-liquid coexisting system},
+}
 ```
 
 ## Contact
