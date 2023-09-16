@@ -1,9 +1,9 @@
-# MD-GNN: Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks
+# Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks
 
 [![GitHub license](https://img.shields.io/github/license/nodematerial/MD-GNN?style=flat-square)](https://raw.githubusercontent.com/nodematerial/MD-GNN/main/LICENSE)
 
 
-This is the implementation for [Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks]()
+This is the implementation for [Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks](https://www.sciencedirect.com/science/article/pii/S0927025623004421?via%3Dihub)
 
 <p align="center"><img src="https://github.com/nodematerial/MD-GNN//blob/main/.github/graphical_abstract.png?raw=true" width="600"/></p>
 
