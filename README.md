@@ -61,7 +61,7 @@ git clone git@github.com:nodematerial/MD-GNN.git
 
 1. Build Docker Image by executing the command below.
 ```bash
-docker build docker -t MD-GNN
+docker-compose build
 ```
 
 2. Run Docker Container by executing the command below.

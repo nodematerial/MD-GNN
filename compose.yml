@@ -1,9 +1,9 @@
 version: '3'
 services:
-  main:
-    build: docker
+  app:
+    build: .
     volumes:
-      - .:/root/GNN
+      - .:/root/MD-GNN
     tty: true
     stdin_open: true
     deploy:
