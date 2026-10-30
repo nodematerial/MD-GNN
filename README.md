@@ -33,7 +33,11 @@ MD-GNN converts each snapshot of a molecular dynamics (MD) simulation into a gra
 - NVIDIA GPU with CUDA support
 - Docker with [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
-The Docker image includes CUDA 11.7, [LAMMPS](https://www.lammps.org/) built with the GPU and MANYBODY packages, PyTorch 2.0.1, PyTorch Geometric, and OVITO. Python dependencies are installed with Poetry during the build.
+The Docker image includes CUDA 13.4 on Ubuntu 26.04, Python 3.14, [LAMMPS](https://www.lammps.org/) built with the GPU and MANYBODY packages, and the latest PyTorch, PyTorch Geometric and OVITO. Python dependencies are installed with Poetry during the build.
+
+LAMMPS is built for `sm_75` by default. For another GPU, pass its architecture, e.g. `docker compose build --build-arg GPU_ARCH=sm_86`.
+
+The published results were obtained with Python 3.10, PyTorch 2.0.1 and CUDA 11.7. That environment is preserved at the [`paper`](https://github.com/nodematerial/MD-GNN/tree/paper) tag.
 
 ## Setup
 
